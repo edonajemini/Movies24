@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/cardMovie.css">
+    <link rel="stylesheet" href="./css/lity.css">
+</head>
+<body id="body">
+    <div class="card">
+        <div class="card_left">
+          <img id="image"/>
+        </div>
+        <div class="card_right">
+          <h1 id="title"></h1>
+          <div class="card_right__details">
+            <ul id="list">
+              <li id="year"></li>
+              <li id="genre"></li>
+              <li id="rate"></li>
+            </ul>
+            <div class="card_right__rating">
+              <div class="card_right__rating__stars">
+                <fieldset class="rating">
+                  <input id="star5" name="rating" type="radio" value="5"></input>
+                  <label class="full" for="star5" title="5 stars"></label>
+                  <input id="star4half" name="rating" type="radio" value="4 and a half"></input>
+                  <label class="half" for="star4half" title="4.5 stars"></label>
+                  <input id="star4" name="rating" type="radio" value="4"></input>
+                  <label class="full" for="star4" title="4 stars"></label>
+                  <input id="star3half" name="rating" type="radio" value="3 and a half"></input>
+                  <label class="half" for="star3half" title="3.5 stars"></label>
+                  <input id="star3" name="rating" type="radio" value="3"></input>
+                  <label class="full" for="star3" title="3 stars"></label>
+                  <input id="star2half" name="rating" type="radio" value="2 and a half"></input>
+                  <label class="half" for="star2half" title="2.5 stars"></label>
+                  <input id="star2" name="rating" type="radio" value="2"></input>
+                  <label class="full" for="star2" title="2 stars"></label>
+                  <input id="star1half" name="rating" type="radio" value="1 and a half"></input>
+                  <label class="half" for="star1half" title="1.5 stars"></label>
+                  <input id="star1" name="rating" type="radio" value="1"></input>
+                  <label class="full" for="star1" title="1 star"></label>
+                  <input id="starhalf" name="rating" type="radio" value="half"></input>
+                  <label class="half" for="starhalf" title="0.5 stars"></label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="card_right__review">
+              <p id="description">Description</p>
+            </div>
+            <div class="card_right__button">
+              <a id="video" href="https://www.youtube.com/embed/YdAIBlPVe9s" data-lity>WATCH TRAILER</a>
+            </div>
+          </div>
+        </div>
+   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6d6d72
+      })
+    </script>
+    <script src="./js/details.js"></script>
+    <script src="./js/lity.js"></script>
+    <script>
+        var movie = decodeURIComponent(window.location.search).substring(1).split("&");
+        window.onload=showSingleMovie(movie);
+    </script>
+</body>
+</html>

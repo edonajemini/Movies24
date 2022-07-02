@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genres</title>
+    <link rel="stylesheet" href="./css/genres.css" />
+  </head>
+  <body>
+    <nav class="nav-index">
+      <div class="container-index">
+        <h1 class="logo-index">Popcorn</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="genres.html" class="current-index">Genres</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <header>
+          <form id="form">
+            <input
+              type="text"
+              id="search"
+              class="search-index"
+              placeholder="Search"
+            />
+          </form>
+        </header>
+      </div>
+    </nav>
+    <h1 class="genres-title">Best Genres of our movies</h1>
+    <main class="page-content">
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Action</h2>
+          <p class="copy">Awake the passion inside your self!</p>
+          <a href="movies.html" class="btn">See movies</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Fiction</h2>
+          <p class="copy">
+            Everyone needs a way to get out the normal border. Expand into
+            virtual life with our movies!
+          </p>
+          <a href="movies.html" class="btn">See movies</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Comedy</h2>
+          <p class="copy">
+            Get a laugh each day. Make your self happy every day.
+          </p>
+          <a href="movies.html" class="btn">See movies</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Romantic</h2>
+          <p class="copy">
+            It's a date. We got the movie and you the time. Perfect match.
+          </p>
+          <a href="movies.html" class="btn">See movies</a>
+        </div>
+      </div>
+    </main>
+
+    <h2 class="genres-title second-genres">More genres to find</h2>
+    <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel__item carousel__item--visible">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91biJr6NbmL.png" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="https://www.cnet.com/a/img/K8PP4Pq5hIXi_7l6bJtrFOmIWmE=/1200x675/2020/09/30/ff578243-ba60-4361-a15f-188b072708f7/fandango-horror.jpg" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gh-101920-murder-mystery-movies-1603137639.png" alt="" />
+      </div>
+      <div class="carousel__item">
+        <img src="https://image.slidesharecdn.com/psychologicalthrillers-140126151745-phpapp02/95/psychological-thrillers-1-638.jpg?cb=1390749505" alt="" />
+      </div>    
+      <div class="carousel__item">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-2020-1587402926.jpg" alt="" />
+      </div>
+      <div class="carousel__action">
+        <button class="btn-prev" id="carousel__btn--prev"></button>
+          <button class="btn-next" id="carousel__btn--next"></button>
+      </div>
+    </div>
+  </div>
+
+    <script src="./js/genres.js"></script>
+  </body>
+</html>
